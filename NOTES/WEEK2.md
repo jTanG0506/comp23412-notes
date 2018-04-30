@@ -15,11 +15,11 @@ Mockups are essentially a replica of the final product. They are useful as you c
 
 ## Ben Shneiderman's 8 Golden Rules
 
-1. **Strive for consistency** - utilise familiar icons, colours and structures when designing similar sitautations. By having a consistent user interface, users are able to apply knowledge from one click to another, rather than having to learn new representations of the same actions.
+1. **Strive for consistency** - utilise familiar icons, colours and structures when designing similar situations. By having a consistent user interface, users are able to apply knowledge from one click to another, rather than having to learn new representations of the same actions.
 
 2. **Seek universal usability** - does your application look the same across different devices? Are the keyboard shortcuts similar across different operating systems?
 
-3. **Offer informative feedback** - for example, when displaying an error message, tell the user what error has occured and what step they should take. If elements can be interacted with, you could highlight the element so tell the user they have selected such element.
+3. **Offer informative feedback** - for example, when displaying an error message, tell the user what error has occurred and what step they should take. If elements can be interacted with, you could highlight the element so tell the user they have selected such element.
 
 4. **Design dialogues that yield closure** - tell users what their actions has led them to, rather than keeping them guessing. For example, present a "Booking Confirmed" message and a booking confirmation when they complete a booking.
 

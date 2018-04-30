@@ -1,7 +1,7 @@
 # Week 3: Data Modelling and Persistence
 
 ### Notice
-The first section of this weeks lecture was an introduction to Spring annotations for persistence, which is not examinable hence ommited.
+The first section of this week's lecture was an introduction to Spring annotations for persistence, which is not examinable hence omitted.
 
 ## CRUD - Create, Read, Update and Delete
 When dealing with data persistent, we have four basic functions; **create**, **read**, **update** and **delete**. A model should have the ability to perform these four functions, if not, then maybe it could be broken down into models of its own.

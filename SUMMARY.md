@@ -7,3 +7,4 @@
   * [Week 3](NOTES/WEEK3.md)  * [Week 3](NOTES/WEEK3.md)
   * [Week 4](NOTES/WEEK4.md)
   * [Week 5](NOTES/WEEK5.md)
+  * [Week 6](NOTES/WEEK6.md)

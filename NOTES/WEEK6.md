@@ -21,3 +21,20 @@ A **test double** is a generic term for any case where production objects are re
 - **Repeatable** - tests should obtain the same result every time you run them (external data providers and concurrency issues could cause intermittent failures)
 - **Self-validating** - tests should be fully automated - i.e. the output should either be *pass* or *fail*, rather than a developer having to interpret of a log file
 - **Timely** - ideally, tests should be written just before you write the production code they test
+
+#### Structure of a unit test
+It is good practice to format the test into **given**, **when** and **then** sections:
+- In the **given** section, setup any values needed
+- In the **when** section, execute the code being test
+- In the **then** section, assert the result you expect
+
+```
+Feature: User buys bananas
+  Scenario: User purchases bananas during store opening times
+
+  Given I have £10 GBP AND the time is before store closing time
+
+  When I ask to buy 4 bananas
+
+  Then I should have £8 AND a purchase of 4 bananas should have been executed
+```

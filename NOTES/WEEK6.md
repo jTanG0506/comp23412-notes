@@ -12,3 +12,12 @@ A **test double** is a generic term for any case where production objects are re
 - A **spy** keeps track of what methods are called and what arguments they are called with. These can be used for test assertions, like checking whether a specific method was called or that it was called with the correct argument. Spies are useful when you want to test the relationship between two objects. For example, an email service may record how many times it fetched and received messages.
 
 - A **mock** is similar to a spy, but instead, you typically set up expectations beforehand. You tell it what you expect to happen, executing the code you're testing, and then verify that the correct behaviour happened.
+
+## Unit Testing
+
+#### FIRST: Best practices for unit tests
+- **Fast** - tests should run quickly
+- **Isolated** - tests should not do setup or teardown for one another
+- **Repeatable** - tests should obtain the same result every time you run them (external data providers and concurrency issues could cause intermittent failures)
+- **Self-validating** - tests should be fully automated - i.e. the output should either be *pass* or *fail*, rather than a developer having to interpret of a log file
+- **Timely** - ideally, tests should be written just before you write the production code they test

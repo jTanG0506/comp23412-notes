@@ -1,6 +1,6 @@
 # Week 3: Data Modelling and Persistence
 
-### Notice
+##### Notice
 The first section of this week's lecture was an introduction to Spring annotations for persistence, which is not examinable hence omitted.
 
 ## CRUD - Create, Read, Update and Delete

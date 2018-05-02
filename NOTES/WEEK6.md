@@ -2,7 +2,7 @@
 
 A **test double** is a generic term for any case where production objects are replaced for testing purposes. In general, when you create any sort of test double, it's going to replicate an object of a specific class.
 
-#### Types of test doubles
+### Types of test doubles
 - A **dummy** is an object which is passed around but never actually used, usually these are used to fill parameter lists.
 
 - A **fake** is an object with a fully working implementation and behaves like a real object of its type, but usually takes some shortcut which makes them not suitable for production, but easier to test. For example, a data persistence object that uses an in-memory database instead of hitting a real production database.
@@ -15,14 +15,14 @@ A **test double** is a generic term for any case where production objects are re
 
 ## Unit Testing
 
-#### FIRST: Best practices for unit tests
+### FIRST: Best practices for unit tests
 - **Fast** - tests should run quickly
 - **Isolated** - tests should not do setup or teardown for one another
 - **Repeatable** - tests should obtain the same result every time you run them (external data providers and concurrency issues could cause intermittent failures)
 - **Self-validating** - tests should be fully automated - i.e. the output should either be *pass* or *fail*, rather than a developer having to interpret of a log file
 - **Timely** - ideally, tests should be written just before you write the production code they test
 
-#### Structure of a unit test
+### Structure of a unit test
 It is good practice to format the test into **given**, **when** and **then** sections:
 - In the **given** section, setup any values needed
 - In the **when** section, execute the code being test

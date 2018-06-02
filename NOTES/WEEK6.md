@@ -19,7 +19,7 @@ A **test double** is a generic term for any case where production objects are re
 - **Fast** - tests should run quickly
 - **Isolated** - tests should not do setup or teardown for one another
 - **Repeatable** - tests should obtain the same result every time you run them (external data providers and concurrency issues could cause intermittent failures)
-- **Self-validating** - tests should be fully automated - i.e. the output should either be *pass* or *fail*, rather than a developer having to interpret of a log file
+- **Self-validating** - tests should be fully automated - i.e. the output should either be *pass* or *fail*, rather than a developer having to interpret a log file
 - **Timely** - ideally, tests should be written just before you write the production code they test
 
 ### Structure of a unit test
@@ -38,3 +38,8 @@ Feature: User buys bananas
 
   Then I should have £8 AND a purchase of 4 bananas should have been executed
 ```
+
+## Integration Testing
+Integration tests, as the name suggests, is to test whether individually developed units work together as expected. It is achieved by combining multiple modules and running higher level tests against all of them to ensure they operate well together. It focuses mainly on the interfaces and flow of data between the modules.
+
+For example, suppose our application has 3 modules, say Login Page, Mailbox and Deleted and each of them are integrated logically. Say we wish to check the integration between the login page and the mailbox, we would expect the application to direct us to the mailbox when login credentials are entered and the login button is pressed, for example. To test the integration between the mailbox itself and the Deleted folder, we would select a mail from mailbox and click the delete button and expect that this email appears in the Deleted folder.

@@ -43,3 +43,13 @@ Feature: User buys bananas
 Integration tests, as the name suggests, is to test whether individually developed units work together as expected. It is achieved by combining multiple modules and running higher level tests against all of them to ensure they operate well together. It focuses mainly on the interfaces and flow of data between the modules.
 
 For example, suppose our application has 3 modules, say Login Page, Mailbox and Deleted and each of them are integrated logically. Say we wish to check the integration between the login page and the mailbox, we would expect the application to direct us to the mailbox when login credentials are entered and the login button is pressed, for example. To test the integration between the mailbox itself and the Deleted folder, we would select a mail from mailbox and click the delete button and expect that this email appears in the Deleted folder.
+
+### Big Bang Approach
+In a big bang approach, all components are integrated together at **once**, and then tested. Clearly, this approach would be convenient for smaller systems. However, this approach means that fault localization is difficult, some interface links that need to be tested by accidentally missed out (as there may be alot of them), this type of integration testing can only happen once all the modules are designed.
+
+### Incremental Approach
+In a incremental approach, testing is done by joining two or more modules that are logically related. Then the other modules are added and tested for the proper functioning. This process continues until all of the modules are joined and tested successfully.
+
+This process is carried out using dummy programs called **stubs** and **drivers**, which are used to simulate data communication with the calling module. A **stub** is called by the module under testing and a **driver** calls the module to be tested.
+
+Incremental approach in turn is called out by two different methods: **bottom-up** and **top-down**.
